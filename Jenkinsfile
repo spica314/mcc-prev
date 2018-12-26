@@ -12,12 +12,9 @@ pipeline {
         }
         stage('Test') {
             agent {
-                docker {
-                    image 'alpine:latest'
-                }
+                dockerfile true
             }
             steps {
-                sh 'apk add clang'
                 sh './test.sh'
             }
         }
