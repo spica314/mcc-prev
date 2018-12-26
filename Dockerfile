@@ -1,3 +1,3 @@
 FROM alpine:latest
 
-RUN apk add clang
+RUN apk add bash clang
