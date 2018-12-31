@@ -1,3 +1,3 @@
 FROM alpine:latest
 
-RUN apk add bash clang gcc
+RUN apk add bash clang gcc linux-headers
